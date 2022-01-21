@@ -9,15 +9,15 @@ namespace массив_строк
         static void Main(string[] args)
         {
             int size = 5;
-            string[] arr1 = new string[size]; 
+            string[] arr = new string[size]; 
 
-            for (int i = 0; i < arr1.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                arr1[i] = Console.ReadLine(); //запись строки
+                arr[i] = Console.ReadLine(); //запись строки
             }
-            string max = arr1[0];
+            string max = arr[0];
             Console.Write("Длина каждого элемента ");
-            foreach (string arr2 in arr1)  //подсказал дима,принцип работы усвоил
+            foreach (string arr2 in arr)  //подсказал дима,принцип работы усвоил
             {
                 Console.Write(arr2.Length + " "); 
                 if (arr2.Length > max.Length)
@@ -26,7 +26,7 @@ namespace массив_строк
                   
                 }
             }
-            Console.WriteLine(" первая и последняя буква {0}, {1}", max[0], max[max.Length-1]);
+            Console.WriteLine(" первая и последняя буква {0},{1}", max[0], max[max.Length-1]);
         }
     }
 }
